@@ -1,0 +1,34 @@
+Antanas Kazinskas;1;1.2;
+Jonas Sermuksnis;1;1.2;
+Finas Tegusigalpas;1;1.2;
+Kraulas Kimono;1;1.2;
+Kirilas Malakovas;1;1.2;
+Zigmas Stasaitis;1;1.2;
+--------------------------
+Filmas Kurpe;2;1.2;
+Kolass Kalantas;2;1.2;
+Furas Furas;2;1.2;
+Omaras;2;1.2;
+Antanas Kazinskas;2;1.2;
+Jonas Sermuksnis;2;1.2;
+--------------------------
+Finas Tegusigalpas;3;1.2;
+Kraulas Kimono;3;1.2;
+Kirilas Malakovas;3;1.2;
+Zigmas Stasaitis;3;1.2;
+Filmas Kurpe;3;1.2;
+Kolass Kalantas;3;1.2;
+--------------------------
+Furas Furas;4;1.2;
+Omaras;4;1.2;
+Antanas Kazinskas;4;1.2;
+Jonas Sermuksnis;4;1.2;
+Finas Tegusigalpas;4;1.2;
+Kraulas Kimono;4;1.2;
+--------------------------
+Kirilas Malakovas;5;1.2;
+Zigmas Stasaitis;5;1.2;
+Filmas Kurpe;5;1.2;
+Kolass Kalantas;5;1.2;
+Furas Furas;5;1.2;
+Omaras;5;1.2;

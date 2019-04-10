@@ -1,0 +1,76 @@
+Pradiniai duomenys
+Nr. Vardas    Pazymiu_skaicius  Vidurkis
+1   antanas   1                 6.95
+2   petras    2                 7.01
+3   kazys     2                 8.65
+4   adamas    2                 8.37
+5   bdamas    2                 8.37
+6   cdamas    2                 8.37
+7   ddamas    2                 8.37
+8   edamas    2                 8.37
+9   fdamas    2                 8.37
+10  gdamas    2                 8.37
+11  sonata    3                 9.13
+Nr. Vardas    Pazymiu_skaicius  Vidurkis
+1   antanas   1                 6.95
+2   petras    2                 7.01
+3   kazys     2                 8.65
+4   adamas    2                 8.37
+5   bdamas    2                 8.37
+6   cdamas    2                 8.37
+7   ddamas    2                 8.37
+8   edamas    2                 8.37
+9   fdamas    2                 8.37
+10  gdamas    2                 8.37
+11  sonata    3                 9.13
+Nr. Vardas    Pazymiu_skaicius  Vidurkis
+1   antanas   1                 6.95
+2   petras    2                 7.01
+3   kazys     2                 8.65
+4   adamas    2                 8.37
+5   bdamas    2                 8.37
+6   cdamas    2                 8.37
+7   ddamas    2                 8.37
+8   edamas    2                 8.37
+9   fdamas    2                 8.37
+10  gdamas    2                 8.37
+11  sonata    3                 9.13
+Nr. Vardas    Pazymiu_skaicius  Vidurkis
+1   antanas   1                 6.95
+2   petras    2                 7.01
+3   kazys     2                 8.65
+4   adamas    2                 8.37
+5   bdamas    2                 8.37
+6   cdamas    2                 8.37
+7   ddamas    2                 8.37
+8   edamas    2                 8.37
+9   fdamas    2                 8.37
+10  gdamas    2                 8.37
+11  sonata    3                 9.13
+Nr. Vardas    Pazymiu_skaicius  Vidurkis
+1   antanas   1                 6.95
+2   petras    2                 7.01
+3   kazys     2                 8.65
+4   adamas    2                 8.37
+5   bdamas    2                 8.37
+6   cdamas    2                 8.37
+7   ddamas    2                 8.37
+8   edamas    2                 8.37
+9   fdamas    2                 8.37
+10  gdamas    2                 8.37
+11  sonata    3                 9.13
+
+Rezultatas
+Vardai                                  Pazymiai  Vidurkiai
+antanasjonasmykolasjonasabraomas        6         36.17
+petrasarturasastaarturasadamas          10        36.41
+kazysvacysviktorasadamasbdamas          10        42.69
+adamasadamasadamasbdamascdamas          10        41.85
+bdamasbdamasbdamascdamasddamas          10        41.85
+cdamascdamascdamasddamasedamas          10        41.85
+ddamasddamasddamasedamasfdamas          10        41.85
+edamasedamasedamasfdamasgdamas          10        41.85
+fdamasfdamasfdamasgdamasrobertas        11        39.91
+gdamasgdamasgdamaszigmasvytas           12        42.09
+sonatamartynasaldonasimasarturas        17        42.14
+

@@ -1,0 +1,76 @@
+Pradiniai duomenys atspausdinti lentele: 
+
+Pradiniai rasytoju duomenys atspausdinti vienoje lenteleje:
+-------------------------------------
+|  Vardas/Pavarde |  Gija |  Salary |
+-------------------------------------
+|         Antanas |     1 |     1.2 |
+|         Antanas |     1 |     1.2 |
+|         Antanas |     1 |     1.2 |
+|         Antanas |     1 |     1.2 |
+|         Cezaris |     1 |     1.2 |
+|         Cezaris |     1 |     1.2 |
+|         Cezaris |     1 |     1.2 |
+|           Danas |     1 |     1.2 |
+|           Danas |     1 |     1.2 |
+|           Danas |     1 |     1.2 |
+|           Danas |     1 |     1.2 |
+|           Danas |     1 |     1.2 |
+|           Danas |     1 |     1.2 |
+|          Flopas |     1 |     1.2 |
+|          Flopas |     1 |     1.2 |
+|          Gilmas |     1 |     1.2 |
+|          Gilmas |     1 |     1.2 |
+|           Kanas |     1 |     1.2 |
+|           Kanas |     1 |     1.2 |
+|           Kanas |     1 |     1.2 |
+|           Kanas |     1 |     1.2 |
+|        Lagnieta |     1 |     1.2 |
+|        Lagnieta |     1 |     1.2 |
+|        Lagnieta |     1 |     1.2 |
+|      Marbielius |     1 |     1.2 |
+|      Marbielius |     1 |     1.2 |
+|      Marbielius |     1 |     1.2 |
+|      Marbielius |     1 |     1.2 |
+|          Oadgar |     1 |     1.2 |
+|          Oadgar |     1 |     1.2 |
+|          Oadgar |     1 |     1.2 |
+|          Oadgar |     1 |     1.2 |
+|          Oadgar |     1 |     1.2 |
+|           Ponas |     1 |     1.2 |
+|           Ponas |     1 |     1.2 |
+|           Ponas |     1 |     1.2 |
+|       Rilmantas |     1 |     1.2 |
+|       Rilmantas |     1 |     1.2 |
+|       Rilmantas |     1 |     1.2 |
+|       Rilmantas |     1 |     1.2 |
+|      Marbielius |     1 |       1 |
+-------------------------------------
+Pradiniai skaitytoju duomenys atspausdinti vienoje lenteleje:
+---------------------------
+|  Vardas/Pavarde | Count | 
+---------------------------
+|         Antanas |     3 | 
+|         Cezaris |     2 | 
+|           Danas |     3 | 
+|          Oadgar |     5 | 
+|      Marbielius |     2 | 
+|          Flopas |     2 | 
+|          Gilmas |     2 | 
+|           Ponas |     3 | 
+|           Kanas |     4 | 
+|        Lagnieta |     3 | 
+|       Rilmantas |     4 | 
+-------------------------------------
+Galutiniai duomenys po skaitymo: 
+-------------------------------------
+|  Vardas/Pavarde |  Gija |  Salary |
+-------------------------------------
+|         Antanas |     1 |     1.2 |
+|         Cezaris |     1 |     1.2 |
+|           Danas |     1 |     1.2 |
+|           Danas |     1 |     1.2 |
+|           Danas |     1 |     1.2 |
+|      Marbielius |     1 |     1.2 |
+|      Marbielius |     1 |     1.2 |
+-------------------------------------

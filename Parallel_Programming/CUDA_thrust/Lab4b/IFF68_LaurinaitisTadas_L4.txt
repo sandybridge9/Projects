@@ -1,0 +1,60 @@
+11
+Antanas 1 6.95
+Petras 2 7.01
+Kazys 2 8.65
+Adamas 2 8.37
+Bdamas 2 8.37
+Cdamas 2 8.37
+Ddamas 2 8.37
+Edamas 2 8.37
+Fdamas 2 8.37
+Gdamas 2 8.37
+Sonata 3 9.13
+11
+Jonas 1 6.95
+Arturas 2 7.01
+Vacys 2 8.65
+Adamas 2 8.37
+Bdamas 2 8.37
+Cdamas 2 8.37
+Ddamas 2 8.37
+Edamas 2 8.37
+Fdamas 2 8.37
+Gdamas 2 8.37
+Martynas 3 9.13
+11
+Mykolas 1 6.95
+Asta 2 7.01
+Viktoras 2 8.65
+Adamas 2 8.37
+Bdamas 2 8.37
+Cdamas 2 8.37
+Ddamas 2 8.37
+Edamas 2 8.37
+Fdamas 2 8.37
+Gdamas 2 8.37
+Aldona 3 9.13
+11
+Jonas 1 6.95
+Arturas 2 7.01
+Adamas 2 8.37
+Bdamas 2 8.37
+Cdamas 2 8.37
+Ddamas 2 8.37
+Edamas 2 8.37
+Fdamas 2 8.37
+Gdamas 2 8.37
+Zigmas 3 9.13
+Simas 3 6.43
+11
+Abraomas 2 8.37
+Adamas 2 8.37
+Bdamas 2 8.37
+Cdamas 2 8.37
+Ddamas 2 8.37
+Edamas 2 8.37
+Fdamas 2 8.37
+Gdamas 2 8.37
+Robertas 3 6.43
+Vytas 3 7.85
+Arturas 5 8.32

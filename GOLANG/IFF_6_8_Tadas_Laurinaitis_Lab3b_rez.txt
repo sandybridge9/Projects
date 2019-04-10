@@ -1,0 +1,80 @@
+Pradiniai duomenys: 
+Studentu sarasas: 
+------------------------------ 
+Nr. Vardas         Amzius Alga  
+1   Anicetas       4      1     
+2   Bakas          1      2     
+3   Bilbas         5      1     
+4   Caras          2      2     
+5   Cilindras      3      1     
+------------------------------ 
+6   Dikas          5      1     
+7   Efronas        3      2     
+8   Frogas         3      1     
+9   Gilbertas      3      1     
+10  Henrikas       6      2     
+------------------------------ 
+11  Ijanas         2      2     
+12  Jake           5      2     
+13  Kilmanas       3      1     
+14  Lolas          3      2     
+15  Manis          4      1     
+------------------------------ 
+16  Nopis          4      2     
+17  Opalas         3      2     
+18  Pranas         3      1     
+19  Quras          4      2     
+20  Radas          3      1     
+------------------------------ 
+21  Sigma          4      2     
+22  Timas          6      1     
+23  Ubuntas        5      2     
+24  Vigras         2      1     
+25  Yulis          8      2     
+------------------------------ 
+Duomenu strukturos duomenys: 
+------------------------------ 
+Nr. Vardas         Skaicius 
+1   Anicasdetas    4        
+2   Bakas          1        
+3   Bilbas         5        
+4   Caras          2        
+5   Cilindras      3        
+------------------------------ 
+6   Dikas          5        
+7   Efroasdnas     3        
+8   Frogas         3        
+9   Gilbeasdrtas   3        
+10  Henrikas       6        
+------------------------------ 
+11  Ijaasdnas      2        
+12  Jake           5        
+13  Kilmanas       3        
+14  Lolaasds       3        
+15  Manis          4        
+------------------------------ 
+16  Nopis          4        
+17  Opalaasds      3        
+18  Pranas         3        
+19  Quras          4        
+20  Radas          3        
+------------------------------ 
+21  Sigmaasd       4        
+22  Timas          6        
+23  Ubuntaasds     5        
+24  Vigras         2        
+25  Yulisasd       8        
+------------------------------ 
+Rezultatai: 
+------------------------------ 
+Nr. Vardas         Skaicius 
+1   Anicetas       1        
+2   Efronas        1        
+3   Gilbertas      1        
+4   Ijanas         1        
+5   Lolas          1        
+6   Opalas         1        
+7   Sigma          1        
+8   Ubuntas        1        
+9   Yulis          1        
+------------------------------ 

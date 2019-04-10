@@ -1,0 +1,203 @@
+Pradiniai duomenys: 
+Rasytoju duomenys vienoje lenteleje: 
+--------+--------------------+--------+----+
+|El. Nr.|Vardas, Pavarde     |Gija    |Alga|
+
+--------+--------------------+--------+----+
+|1      |Antanas             |1       |1.2 |
+
+|2      |Antanas             |1       |1.2 |
+
+|3      |Antanas             |1       |1.2 |
+
+|4      |Antanas             |1       |1.2 |
+
+|5      |Cezaris             |1       |1.2 |
+
+|6      |Cezaris             |1       |1.2 |
+
+|7      |Cezaris             |1       |1.2 |
+
+|8      |Danas               |1       |1.2 |
+
+|9      |Danas               |1       |1.2 |
+
+|10     |Danas               |1       |1.2 |
+
+|11     |Danas               |1       |1.2 |
+
+|12     |Danas               |1       |1.2 |
+
+|13     |Danas               |1       |1.2 |
+
+|14     |Flopas              |1       |1.2 |
+
+|15     |Flopas              |1       |1.2 |
+
+|16     |Gilmas              |1       |1.2 |
+
+|17     |Gilmas              |1       |1.2 |
+
+|18     |Kanas               |1       |1.2 |
+
+|19     |Kanas               |1       |1.2 |
+
+|20     |Kanas               |1       |1.2 |
+
+|21     |Kanas               |1       |1.2 |
+
+|22     |Lagnieta            |1       |1.2 |
+
+|23     |Lagnieta            |1       |1.2 |
+
+|24     |Lagnieta            |1       |1.2 |
+
+|25     |Marbielius          |1       |1.2 |
+
+|26     |Marbielius          |1       |1.2 |
+
+|27     |Marbielius          |1       |1.2 |
+
+|28     |Marbielius          |1       |1.2 |
+
+|29     |Oadgar              |1       |1.2 |
+
+|30     |Oadgar              |1       |1.2 |
+
+|31     |Oadgar              |1       |1.2 |
+
+|32     |Oadgar              |1       |1.2 |
+
+|33     |Oadgar              |1       |1.2 |
+
+|34     |Ponas               |1       |1.2 |
+
+|35     |Ponas               |1       |1.2 |
+
+|36     |Ponas               |1       |1.2 |
+
+|37     |Rilmantas           |1       |1.2 |
+
+|38     |Rilmantas           |1       |1.2 |
+
+|39     |Rilmantas           |1       |1.2 |
+
+|40     |Rilmantas           |1       |1.2 |
+
+--------------------------------------------
+Skaitytoju duomenys vienoje lenteleje: 
+--------+--------------------+--------+
+|El. Nr.|Vardas, Pavarde     |Skaicius|
+
+--------+--------------------+--------+
+|1      |BAntanas            |4       |
+
+|2      |DCezaris            |3       |
+
+|3      |HMarbielius         |2       |
+
+|4      |JDanas              |6       |
+
+|5      |JOadgar             |5       |
+
+|6      |KMarbielius         |2       |
+
+|7      |SFlopas             |2       |
+
+|8      |HGilmas             |2       |
+
+|9      |FPonas              |3       |
+
+|10     |EKanas              |4       |
+
+|11     |TLagnieta           |3       |
+
+|12     |URilmantas          |4       |
+
+---------------------------------------
+Rezultatai: 
+--------+--------------------+--------+----+
+|El. Nr.|Vardas, Pavarde     |Gija    |Alga|
+
+--------+--------------------+--------+----+
+|1      |Antanas             |1       |1.2 |
+
+|2      |Antanas             |1       |1.2 |
+
+|3      |Antanas             |1       |1.2 |
+
+|4      |Antanas             |1       |1.2 |
+
+|5      |Cezaris             |1       |1.2 |
+
+|6      |Cezaris             |1       |1.2 |
+
+|7      |Cezaris             |1       |1.2 |
+
+|8      |Danas               |1       |1.2 |
+
+|9      |Danas               |1       |1.2 |
+
+|10     |Danas               |1       |1.2 |
+
+|11     |Danas               |1       |1.2 |
+
+|12     |Danas               |1       |1.2 |
+
+|13     |Danas               |1       |1.2 |
+
+|14     |Flopas              |1       |1.2 |
+
+|15     |Flopas              |1       |1.2 |
+
+|16     |Gilmas              |1       |1.2 |
+
+|17     |Gilmas              |1       |1.2 |
+
+|18     |Kanas               |1       |1.2 |
+
+|19     |Kanas               |1       |1.2 |
+
+|20     |Kanas               |1       |1.2 |
+
+|21     |Kanas               |1       |1.2 |
+
+|22     |Lagnieta            |1       |1.2 |
+
+|23     |Lagnieta            |1       |1.2 |
+
+|24     |Lagnieta            |1       |1.2 |
+
+|25     |Marbielius          |1       |1.2 |
+
+|26     |Marbielius          |1       |1.2 |
+
+|27     |Marbielius          |1       |1.2 |
+
+|28     |Marbielius          |1       |1.2 |
+
+|29     |Oadgar              |1       |1.2 |
+
+|30     |Oadgar              |1       |1.2 |
+
+|31     |Oadgar              |1       |1.2 |
+
+|32     |Oadgar              |1       |1.2 |
+
+|33     |Oadgar              |1       |1.2 |
+
+|34     |Ponas               |1       |1.2 |
+
+|35     |Ponas               |1       |1.2 |
+
+|36     |Ponas               |1       |1.2 |
+
+|37     |Rilmantas           |1       |1.2 |
+
+|38     |Rilmantas           |1       |1.2 |
+
+|39     |Rilmantas           |1       |1.2 |
+
+|40     |Rilmantas           |1       |1.2 |
+
+-------------------------------------------
