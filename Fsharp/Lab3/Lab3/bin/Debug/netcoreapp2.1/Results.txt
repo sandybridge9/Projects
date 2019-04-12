@@ -1,0 +1,12 @@
+Between 1 and 10, 6 has a maximum of 4 divisors
+Between 1000 and 1000, 1000 has a maximum of 16 divisors
+Between 1 and 10, 6 has a maximum of 4 divisors
+Between 1000 and 1000, 1000 has a maximum of 16 divisors
+Between 1 and 10, 6 has a maximum of 4 divisors
+Between 1000 and 1000, 1000 has a maximum of 16 divisors
+Between 999900 and 1000000, 999936 has a maximum of 120 divisors
+Between 1 and 10, 6 has a maximum of 4 divisors
+Between 1000 and 1000, 1000 has a maximum of 16 divisors
+Between 1 and 10, 6 has a maximum of 4 divisors
+Between 1000 and 1000, 1000 has a maximum of 16 divisors
+Between 999900 and 1000000, 999936 has a maximum of 120 divisors

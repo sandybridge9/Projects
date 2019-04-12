@@ -1,0 +1,8 @@
+D:\Tadas\KALBUTEORIJA\Fsharp\Lab3\Lab3\bin\Debug\netcoreapp2.1\Lab3.deps.json
+D:\Tadas\KALBUTEORIJA\Fsharp\Lab3\Lab3\bin\Debug\netcoreapp2.1\Lab3.runtimeconfig.json
+D:\Tadas\KALBUTEORIJA\Fsharp\Lab3\Lab3\bin\Debug\netcoreapp2.1\Lab3.runtimeconfig.dev.json
+D:\Tadas\KALBUTEORIJA\Fsharp\Lab3\Lab3\bin\Debug\netcoreapp2.1\Lab3.dll
+D:\Tadas\KALBUTEORIJA\Fsharp\Lab3\Lab3\bin\Debug\netcoreapp2.1\Lab3.pdb
+D:\Tadas\KALBUTEORIJA\Fsharp\Lab3\Lab3\obj\Debug\netcoreapp2.1\Lab3.fsprojAssemblyReference.cache
+D:\Tadas\KALBUTEORIJA\Fsharp\Lab3\Lab3\obj\Debug\netcoreapp2.1\Lab3.dll
+D:\Tadas\KALBUTEORIJA\Fsharp\Lab3\Lab3\obj\Debug\netcoreapp2.1\Lab3.pdb
