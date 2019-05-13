@@ -1,0 +1,11 @@
+string g = "hello"{}
+number h = 6.6
+number s = 6.7
+if(h<=s)
+{
+	printf("Hay")
+}else{
+	for(number i = 0; i < 3; i++){
+		printf("Hell")
+	}
+}
