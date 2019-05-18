@@ -55,12 +55,14 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="astexec.cpp" />
     <ClCompile Include="astgen.cpp" />
     <ClCompile Include="lexer.cpp" />
     <ClCompile Include="parser.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="astexec.h" />
     <ClInclude Include="astgen.h" />
     <ClInclude Include="parser.h" />
   </ItemGroup>

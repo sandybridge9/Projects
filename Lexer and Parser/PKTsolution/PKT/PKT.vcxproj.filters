@@ -33,6 +33,9 @@
     <ClCompile Include="astgen.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="astexec.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="lexer.l">
@@ -47,6 +50,9 @@
       <Filter>GeneratedFiles</Filter>
     </ClInclude>
     <ClInclude Include="astgen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="astexec.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

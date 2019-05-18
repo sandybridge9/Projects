@@ -69,14 +69,14 @@ exp
 		: IDENTIFIER { $$ = makeExpByName($1); }
 		| constant { $$ = $1; }
 		| IDENTIFIER ASSIGN_OP exp { $$ = makeAssignment($1, $3); }
-		| exp arithmetic_operator exp { $$ = makeExp($1, $3, $2); }
+		| exp arithmetic_operator exp { $$ = makeExpression($1, $3, $2); }
 		| IDENTIFIER INC_OP { $$ = makeExpIncrease($1); }
 		| IDENTIFIER DEC_OP { $$ = makeExpDecrease($1); }
 		;
 
 constant
 		: STRING_VALUE { $$ = makeExpByString($1); }
-		| NUMBER_VALUE { printf(" --%f-- ", $1); $$ = makeExpByNum($1); }
+		| NUMBER_VALUE { $$ = makeExpByNum($1); }
 		;
 
 
@@ -124,9 +124,9 @@ function_declaration
 		;
 
 argument_list
-		: 
-		| argument_list ',' argument { $$ = makeArgumentList($1, $3); }
+		: argument_list ',' argument { $$ = makeArgumentList($1, $3); }
 		| argument { $$ = $1; }
+		| { $$ = 0; }
 		;
 
 argument
@@ -182,10 +182,10 @@ int main(int argc, char** argv)
 	if (argc == 3)
 		close_output_file();
 
-	//assert(a);
-    //struct ExecEnviron* e = createEnv();
-    //execAst(e, a);
-    //freeEnv(e);
+	assert(a);
+    struct ExecEnviron* e = createEnv();
+    execAst(e, a);
+    freeEnv(e);
 
 	return 0;
 }
