@@ -14,47 +14,54 @@
 ID		([a-zA-Z_][a-zA-Z_0-9]*)
 NUM		([0-9]+)|([0-9]*\.[0-9]+)
 STR		(\"(\\.|[^"])*\")
-BOOL	(true|false)
 
 %%
-"("				{ printf("("); return '('; }
-")"				{ printf(")"); return ')'; }
-"{"				{ printf("{"); return '{'; }
-"}"				{ printf("}"); return '}'; }
-"return"		{ printf(" return "); return RETURN; }
+"("				{ return '('; }
+")"				{ return ')'; }
+"{"				{ return '{'; }
+"}"				{ return '}'; }
+";"				{ return ';'; }
+","				{ return ','; }
+"return"		{ return RETURN; }
 
-"if"			{ printf(" if "); return IF; }
-"else"			{ printf(" else "); return ELSE; }
-">"				{ printf(">"); return '>'; }
-"<"				{ printf("<"); return '<'; }
-"=="			{ printf("=="); return EQUAL_OP; }
-">="			{ printf(">="); return MORE_OR_EQUAL_OP; }
-"<="			{ printf("<="); return LESS_OR_EQUAL_OP; }
-"||"			{ printf("||"); return OR_OP; }
-"&&"			{ printf("&&"); return AND_OP; }
+"if"			{ return IF; }
+"elif"			{ return ELIF; }
+"else"			{ return ELSE; }
+">"				{ return MORE_OP; }
+"<"				{ return LESS_OP; }
+"=="			{ return EQUAL_OP; }
+">="			{ return MORE_OR_EQUAL_OP; }
+"<="			{ return LESS_OR_EQUAL_OP; }
+"||"			{ return OR_OP; }
+"&&"			{ return AND_OP; }
 
-"="				{ printf("="); return '='; }
-"+"				{ printf("+"); return '+'; }
-"-"				{ printf("-"); return '-'; }
-"*"				{ printf("*"); return '*'; }
-"/"				{ printf("/"); return '/'; }
-"+="			{ printf("+="); return ADD_ASSIGN; }
-"-="			{ printf("-="); return SUB_ASSIGN; }
-"++"			{ printf("++"); return INC_OP; }
-"--"			{ printf("--"); return DEC_OP; }
+"for"			{ return FOR; }
+"while"			{ return WHILE; }
+"continue"		{ ; }
+"break"			{ ; }
 
-"for"			{ printf(" for "); return FOR; }
-"continue"		{ printf(" continue "); return CONTINUE; }
-"break"			{ printf(" break "); return BREAK; }
-"string"		{ printf(" string "); return STRING; }
-"number"		{ printf(" number "); return NUMBER; }
-{NUM}			{ printf(" NUMBER "); yylval = atof(yytext); return NUMBER; }
-{STR}			{ printf(" STRING "); return STRING; }
-{BOOL}			{ printf(" BOOL "); return BOOL; }
-{ID}			{ printf(" IDENTIFIER "); return IDENTIFIER; }
-[ \t\v\n\f]		{ printf(" useless "); }
+"="				{ return ASSIGN_OP; }
+"+"				{ return ADD_OP; }
+"-"				{ return SUB_OP; }
+"*"				{ return MUL_OP; }
+"/"				{ return DIV_OP; }
+"%"				{ return MOD_OP; }
+"+="			{ return ADD_ASSIGN_OP; }
+"-="			{ return SUB_ASSIGN_OP; }
+"++"			{ return INC_OP; }
+"--"			{ return DEC_OP; }
+
+"string"		{ yylval.type = _strdup(yytext); return DATA_TYPE; }
+"number"		{ yylval.type = _strdup(yytext); return DATA_TYPE; }
+"void"			{ yylval.type = _strdup(yytext); return DATA_TYPE; }
+{NUM}			{ yylval.number = atof(yytext); return NUMBER_VALUE; }
+{STR}			{ yylval.string = _strdup(yytext); return STRING_VALUE; }
+{ID}			{ yylval.identifier = _strdup(yytext); return IDENTIFIER; }
+[ \v\f]			{ ; }
+[\t]			{ printf("\t"); }
+[\n]			{ printf("\n"); }
 <<EOF>>			{ close_input_file(); yyterminate(); }
-.
+.				{ ; }
 
 %%
 

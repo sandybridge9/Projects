@@ -1,33 +1,23 @@
 ﻿  Generating lexical analyzer
   Generating syntax parser
+  parser.y:129.14: warning: empty rule for typed nonterminal, and no action [-Wother]
+   argument_list
+                ^
+parser.y : warning : 1 nonterminal useless in grammar [-Wother]
+parser.y : warning : 1 rule useless in grammar [-Wother]
+  parser.y:41.55-70: warning: nonterminal useless in grammar: return_statement [-Wother]
+   %type<ast> if_statement loop_statement for_expression return_statement boolean_expression
+                                                         ^^^^^^^^^^^^^^^^
+  parser.y:117.19-41: warning: rule useless in grammar [-Wother]
+   		: RETURN exp { $$ = $2; }
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+parser.y : warning : 10 shift/reduce conflicts [-Wconflicts-sr]
+  astgen.cpp
   lexer.cpp
 d:\tadas\visualstudioprojects\pktsolution\pkt\lexer.cpp(398): warning C4005: 'yywrap': macro redefinition
   d:\tadas\visualstudioprojects\pktsolution\pkt\lexer.cpp(74): note: see previous definition of 'yywrap'
-d:\tadas\visualstudioprojects\pktsolution\pkt\lexer.l(24): error C2065: 'RETURN': undeclared identifier
-d:\tadas\visualstudioprojects\pktsolution\pkt\lexer.l(26): error C2065: 'IF': undeclared identifier
-d:\tadas\visualstudioprojects\pktsolution\pkt\lexer.l(27): error C2065: 'ELSE': undeclared identifier
-d:\tadas\visualstudioprojects\pktsolution\pkt\lexer.l(30): error C2065: 'EQUAL_OP': undeclared identifier
-d:\tadas\visualstudioprojects\pktsolution\pkt\lexer.l(31): error C2065: 'MORE_OR_EQUAL_OP': undeclared identifier
-d:\tadas\visualstudioprojects\pktsolution\pkt\lexer.l(32): error C2065: 'LESS_OR_EQUAL_OP': undeclared identifier
-d:\tadas\visualstudioprojects\pktsolution\pkt\lexer.l(33): error C2065: 'OR_OP': undeclared identifier
-d:\tadas\visualstudioprojects\pktsolution\pkt\lexer.l(34): error C2065: 'AND_OP': undeclared identifier
-d:\tadas\visualstudioprojects\pktsolution\pkt\lexer.l(41): error C2065: 'ADD_ASSIGN': undeclared identifier
-d:\tadas\visualstudioprojects\pktsolution\pkt\lexer.l(42): error C2065: 'SUB_ASSIGN': undeclared identifier
-d:\tadas\visualstudioprojects\pktsolution\pkt\lexer.l(43): error C2065: 'INC_OP': undeclared identifier
-d:\tadas\visualstudioprojects\pktsolution\pkt\lexer.l(44): error C2065: 'DEC_OP': undeclared identifier
-d:\tadas\visualstudioprojects\pktsolution\pkt\lexer.l(46): error C2065: 'FOR': undeclared identifier
-d:\tadas\visualstudioprojects\pktsolution\pkt\lexer.l(47): error C2065: 'CONTINUE': undeclared identifier
-d:\tadas\visualstudioprojects\pktsolution\pkt\lexer.l(48): error C2065: 'BREAK': undeclared identifier
-d:\tadas\visualstudioprojects\pktsolution\pkt\lexer.l(49): error C2065: 'STRING': undeclared identifier
-d:\tadas\visualstudioprojects\pktsolution\pkt\lexer.l(50): error C2065: 'NUMBER': undeclared identifier
-d:\tadas\visualstudioprojects\pktsolution\pkt\lexer.l(51): error C2065: 'NUMBER': undeclared identifier
-d:\tadas\visualstudioprojects\pktsolution\pkt\lexer.l(52): error C2440: '=': cannot convert from 'char *' to 'YYSTYPE'
-  d:\tadas\visualstudioprojects\pktsolution\pkt\lexer.l(52): note: There is no context in which this conversion is possible
-d:\tadas\visualstudioprojects\pktsolution\pkt\lexer.l(52): error C2065: 'STRING': undeclared identifier
-d:\tadas\visualstudioprojects\pktsolution\pkt\lexer.l(53): error C2440: '=': cannot convert from 'char *' to 'YYSTYPE'
-  d:\tadas\visualstudioprojects\pktsolution\pkt\lexer.l(53): note: There is no context in which this conversion is possible
-d:\tadas\visualstudioprojects\pktsolution\pkt\lexer.l(53): error C2065: 'BOOL': undeclared identifier
-d:\tadas\visualstudioprojects\pktsolution\pkt\lexer.l(54): error C2065: 'IDENTIFIER': undeclared identifier
+d:\tadas\visualstudioprojects\pktsolution\pkt\lexer.l(57): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
   parser.cpp
-  Source.cpp
   Generating Code...
+d:\tadas\visualstudioprojects\pktsolution\pkt\astgen.cpp(24): warning C4715: 'cRealloc': not all control paths return a value
+  PKT.vcxproj -> D:\Tadas\VisualStudioProjects\PKTsolution\Debug\PKT.exe

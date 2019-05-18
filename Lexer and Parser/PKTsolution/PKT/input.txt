@@ -1,11 +1,19 @@
-string g = "hello"{}
-number h = 6.6
-number s = 6.7
-if(h<=s)
-{
-	printf("Hay")
+string glob = "Hay";
+string glob = "Hay";
+number ham = 14;
+number sam = 12;
+void hemp(string s){
+	string sam = s;
+} 
+hemp(ham);
+if(ham > sam){
+	number mam = 144;
+}elif(ham < sam){
+	glob = "smith";
 }else{
-	for(number i = 0; i < 3; i++){
-		printf("Hell")
-	}
+	number mam2 = 125;
+}
+for(number z = 14; z < 20; z++ ){
+}
+while(ham < 18){
 }

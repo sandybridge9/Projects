@@ -45,13 +45,52 @@ extern int yydebug;
 # define YYTOKENTYPE
   enum yytokentype
   {
-    NUM = 258
+    DATA_TYPE = 258,
+    IDENTIFIER = 259,
+    STRING_VALUE = 260,
+    NUMBER_VALUE = 261,
+    RETURN = 262,
+    IF = 263,
+    ELIF = 264,
+    ELSE = 265,
+    FOR = 266,
+    WHILE = 267,
+    MORE_OP = 268,
+    LESS_OP = 269,
+    EQUAL_OP = 270,
+    MORE_OR_EQUAL_OP = 271,
+    LESS_OR_EQUAL_OP = 272,
+    OR_OP = 273,
+    AND_OP = 274,
+    ADD_OP = 275,
+    SUB_OP = 276,
+    MUL_OP = 277,
+    DIV_OP = 278,
+    MOD_OP = 279,
+    ADD_ASSIGN_OP = 280,
+    SUB_ASSIGN_OP = 281,
+    INC_OP = 282,
+    DEC_OP = 283,
+    ASSIGN_OP = 284
   };
 #endif
 
 /* Value type.  */
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
-typedef  double  YYSTYPE;
+typedef union YYSTYPE YYSTYPE;
+union YYSTYPE
+{
+#line 22 "parser.y" /* yacc.c:1909  */
+
+	char* type;
+	char* identifier;
+	char* op;
+	char* string;
+	float number;
+	struct AstElement* ast;
+
+#line 93 "parser.h" /* yacc.c:1909  */
+};
 # define YYSTYPE_IS_TRIVIAL 1
 # define YYSTYPE_IS_DECLARED 1
 #endif
@@ -59,6 +98,6 @@ typedef  double  YYSTYPE;
 
 extern YYSTYPE yylval;
 
-int yyparse (void);
+int yyparse (void *astDest);
 
 #endif /* !YY_YY_PARSER_H_INCLUDED  */

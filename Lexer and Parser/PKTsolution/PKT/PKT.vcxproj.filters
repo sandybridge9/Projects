@@ -30,6 +30,9 @@
     <ClCompile Include="parser.cpp">
       <Filter>GeneratedFiles</Filter>
     </ClCompile>
+    <ClCompile Include="astgen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="lexer.l">
@@ -42,6 +45,9 @@
   <ItemGroup>
     <ClInclude Include="parser.h">
       <Filter>GeneratedFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="astgen.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
