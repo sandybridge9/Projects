@@ -1,16 +1,8 @@
 ﻿  Generating lexical analyzer
   Generating syntax parser
-  parser.y:129.14: warning: empty rule for typed nonterminal, and no action [-Wother]
+  parser.y:126.14: warning: empty rule for typed nonterminal, and no action [-Wother]
    argument_list
                 ^
-parser.y : warning : 1 nonterminal useless in grammar [-Wother]
-parser.y : warning : 1 rule useless in grammar [-Wother]
-  parser.y:41.55-70: warning: nonterminal useless in grammar: return_statement [-Wother]
-   %type<ast> if_statement loop_statement for_expression return_statement boolean_expression
-                                                         ^^^^^^^^^^^^^^^^
-  parser.y:117.19-41: warning: rule useless in grammar [-Wother]
-   		: RETURN exp { $$ = $2; }
-                     ^^^^^^^^^^^^^^^^^^^^^^^
 parser.y : warning : 10 shift/reduce conflicts [-Wconflicts-sr]
   astgen.cpp
   lexer.cpp

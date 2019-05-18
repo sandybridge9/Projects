@@ -98,6 +98,10 @@ struct AstElement
 		{
 			char* name;
 		}functionCallWithoutParameters;
+		struct
+		{
+			struct AstElement *expression;
+		}returnStatement;
     } data;
 };
 
@@ -123,4 +127,5 @@ struct AstElement* makeArgumentList(struct AstElement* left, struct AstElement* 
 struct AstElement* makeFunctionDeclaration(char* data_type, char* name, struct AstElement* argumentsList, struct AstElement* statements);
 struct AstElement* makeFunctionCall(char* name, struct AstElement* parameters);
 struct AstElement* makeFunctionCallWithoutParameters(char* name);
+struct AstElement* makeReturnStatement(struct AstElement* expression);
 #endif

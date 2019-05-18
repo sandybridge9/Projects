@@ -4,6 +4,8 @@
 #include <assert.h>
 #include <string.h>
 
+//Functions that are not used
+/*
 static AstElement* checkAlloc(size_t sz)
 {
 	void* result = calloc(sz, 1);
@@ -22,6 +24,7 @@ static AstElement** cRealloc(AstElement** Block, size_t sz)
 		exit(1);
 	}
 }
+*/
 
 struct AstElement* makeAssignment(char* name, struct AstElement* val)
 {
@@ -207,7 +210,7 @@ struct AstElement* makeFunctionDeclaration(char* data_type, char* name, struct A
 	result->data.functionDeclaration.name = name;
 	result->data.functionDeclaration.argumentsList = argumentsList;
 	result->data.functionDeclaration.statements = statements;
-	printf(" argumentList ");
+	printf(" Function declaration ");
 	return result;
 }
 
@@ -225,5 +228,13 @@ struct AstElement* makeFunctionCallWithoutParameters(char* name)
 	struct AstElement* result = new AstElement();
 	result->data.functionCallWithoutParameters.name = name;
 	printf(" parameterless function call ");
+	return result;
+}
+
+struct AstElement* makeReturnStatement(struct AstElement* expression)
+{
+	struct AstElement* result = new AstElement();
+	result->data.returnStatement.expression = expression;
+	printf(" return statement ");
 	return result;
 }

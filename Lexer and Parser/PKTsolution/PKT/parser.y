@@ -62,6 +62,7 @@ statement
 		| loop_statement { $$ = $1; }
 		| function_declaration { $$ = $1; }
 		| function_call ';' { $$ = $1; }
+		| return_statement ';' { $$ = $1; }
 		;
 
 exp
@@ -113,10 +114,6 @@ for_expression
 		: '(' declaration_statement ';' boolean_expression ';' exp ')' { $$ = $2; }
 		;
 
-return_statement
-		: RETURN exp { $$ = $2; }
-		;
-
 function_call
 		: IDENTIFIER '(' ')' { $$ = makeFunctionCallWithoutParameters($1); }
 		| IDENTIFIER '(' exp ')' { $$ = makeFunctionCall($1, $3); }
@@ -134,6 +131,10 @@ argument_list
 
 argument
 		: DATA_TYPE IDENTIFIER { $$ = makeArgument($1, $2); }
+		;
+
+return_statement
+		: RETURN exp { $$ = makeReturnStatement($2); }
 		;
 
 boolean_operator
@@ -175,7 +176,7 @@ int main(int argc, char** argv)
 	else {
 		set_input_file("input.txt");
 	}
-	struct AstElement** astDest;
+	struct AstElement* astDest;
 	int rlt = yyparse(&astDest);
 
 	if (argc == 3)
