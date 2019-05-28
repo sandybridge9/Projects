@@ -1,0 +1,19 @@
+﻿  astexec.cpp
+d:\tadas\visualstudioprojects\pktsolution\pkt\astexec.cpp(286): warning C4018: '<': signed/unsigned mismatch
+d:\tadas\visualstudioprojects\pktsolution\pkt\astexec.cpp(337): warning C4018: '<': signed/unsigned mismatch
+d:\tadas\visualstudioprojects\pktsolution\pkt\astexec.cpp(369): warning C4018: '<': signed/unsigned mismatch
+d:\tadas\visualstudioprojects\pktsolution\pkt\astexec.cpp(400): warning C4018: '<': signed/unsigned mismatch
+d:\tadas\visualstudioprojects\pktsolution\pkt\astexec.cpp(442): warning C4018: '<': signed/unsigned mismatch
+d:\tadas\visualstudioprojects\pktsolution\pkt\astexec.cpp(571): warning C4018: '<': signed/unsigned mismatch
+d:\tadas\visualstudioprojects\pktsolution\pkt\astexec.cpp(731): warning C4018: '<': signed/unsigned mismatch
+d:\tadas\visualstudioprojects\pktsolution\pkt\astexec.cpp(767): warning C4018: '<': signed/unsigned mismatch
+d:\tadas\visualstudioprojects\pktsolution\pkt\astexec.cpp(906): warning C4018: '<': signed/unsigned mismatch
+d:\tadas\visualstudioprojects\pktsolution\pkt\astexec.cpp(963): warning C4018: '<': signed/unsigned mismatch
+d:\tadas\visualstudioprojects\pktsolution\pkt\astexec.cpp(158): warning C4715: 'valueExecs': not all control paths return a value
+d:\tadas\visualstudioprojects\pktsolution\pkt\astexec.cpp(275): warning C4715: 'execBinaryExp': not all control paths return a value
+d:\tadas\visualstudioprojects\pktsolution\pkt\astexec.cpp(327): warning C4715: 'execBooleanExp': not all control paths return a value
+d:\tadas\visualstudioprojects\pktsolution\pkt\astexec.cpp(359): warning C4715: 'execEqualsExp': not all control paths return a value
+d:\tadas\visualstudioprojects\pktsolution\pkt\astexec.cpp(390): warning C4715: 'execMoreEqualsExp': not all control paths return a value
+d:\tadas\visualstudioprojects\pktsolution\pkt\astexec.cpp(421): warning C4715: 'execLessEqualsExp': not all control paths return a value
+d:\tadas\visualstudioprojects\pktsolution\pkt\astexec.cpp(450): warning C4715: 'functionCallArgument': not all control paths return a value
+  PKT.vcxproj -> D:\Tadas\VisualStudioProjects\PKTsolution\Debug\PKT.exe

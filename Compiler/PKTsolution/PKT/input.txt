@@ -1,0 +1,37 @@
+inStart = true;
+string str = "plop";
+number a1 = 10;
+number a2 = 20;
+number a3 = 30;
+number a4 = 5;
+print(inStart, "a1: ", a1);
+while(a1 < a3)
+{
+	a1 = a1 + 5;
+}
+time();
+number countNumbers(string inStart, number b1, number b2)
+{
+	inStart = true;
+	number joke = 140;
+	if(joke > b1)
+	{
+		b1 = b1 * 40;
+	}
+	return b1;
+	inStart = false;
+}
+number recursionTest(string inStart, number b1, number b2)
+{
+	inStart = true;
+	if(b1 >= b2)
+	{
+		return b1;
+	}
+	b1 = b1 + 5;
+	recursionTest(inStart, b1, b2);
+	inStart = false;
+}
+a3 = countNumbers(inStart, a1, a2);
+a1 = recursionTest(inStart, a4, a2);
+inStart = false;
