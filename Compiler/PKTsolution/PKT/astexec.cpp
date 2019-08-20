@@ -76,77 +76,64 @@ static void functionCallWithoutParameters(struct ExecEnviron* e, struct AstEleme
 //Method responsible for getting the value of expression
 static variable valueExecs(struct ExecEnviron* e, struct AstElement* a)
 {
-	printf("-value_execs-");
 	if (a->operation == 3) 
 	{
 		variable var = execExpByNumber(e, a);
-		printf(" %f ", var.numVal);
 		return var;
 	}
 	else if (a->operation == 4) 
 	{
 		variable var = execExpByString(e, a);
-		printf(" %s ", var.strVal);
 		return var;
 	}
 	else if (a->operation == 5)
 	{
 		variable var = execExpByName(e, a);
-		printf(" %s ", var.name);
 		return var;
 	}
 	else if (a->operation == 6) 
 	{
 		variable var = execBinaryExp(e, a);
-		printf("ans: %f ", var.numVal);
 		return var;
 	}
 	else if (a->operation == 15)
 	{
 		variable var = execBooleanExp(e, a);
-		printf("ans: %f ", var.numVal);
 		return var;
 	}
 	else if (a->operation == 27)
 	{
 		variable var = execEqualsExp(e, a);
-		printf("ans: %f ", var.numVal);
 		return var;
 	}
 	else if (a->operation == 28)
 	{
 		variable var = execMoreEqualsExp(e, a);
-		printf("ans: %f ", var.numVal);
 		return var;
 	}
 	else if (a->operation == 29)
 	{
 		variable var = execLessEqualsExp(e, a);
-		printf("ans: %f ", var.numVal);
 		return var;
 	}
 	else if (a->operation == 18)
 	{
 		variable var = functionArgument(e, a);
-		printf(" %s ", var.name);
 		return var;
 	}
 	else if (a->operation == 24)
 	{
 		variable var = functionCallArgument(e, a);
-		printf(" %s ", var.name);
 		return var;
 	}
 	else if (a->operation == 25)
 	{
 		variable var = functionCallArgument2(e, a);
-		printf(" %s ", var.strVal);
 		return var;
 	}
 	else if (a->operation == 26)
 	{
 		variable var = functionCallArgument3(e, a);
-		printf(" %f ", var.numVal);
 		return var;
 	}/*
 	else if (a->operation == 23)
@@ -160,7 +147,6 @@ static variable valueExecs(struct ExecEnviron* e, struct AstElement* a)
 //returns a number value
 static variable execExpByNumber(struct ExecEnviron* e, struct AstElement* a) 
 {
-	printf(" number_const ");
 	variable var;
 	var.type = 1;
 	var.numVal = a->data.expByNum.val;
@@ -170,7 +156,6 @@ static variable execExpByNumber(struct ExecEnviron* e, struct AstElement* a)
 //returns a string value
 static variable execExpByString(struct ExecEnviron* e, struct AstElement* a)
 {
-	printf(" string_const ");
 	variable var;
 	var.type = 2;
 	var.strVal = a->data.expByString.val;
@@ -180,7 +165,6 @@ static variable execExpByString(struct ExecEnviron* e, struct AstElement* a)
 //finds a variable with a matching name and returns it
 static variable execExpByName(struct ExecEnviron* e, struct AstElement* a)
 {
-	printf(" name_identifier ");
 	variable var;
 	var.name = a->data.expByName.name;
 	for (variable v : e->variables)
@@ -197,7 +181,6 @@ static variable execExpByName(struct ExecEnviron* e, struct AstElement* a)
 //increases number variable's value by 1
 static void execIncreaseExp(struct ExecEnviron* e, struct AstElement* a)
 {
-	printf(" increase_op ");
 	char* name = a->data.expByName.name;
 	for (variable v : e->variables)
 	{
@@ -216,7 +199,6 @@ static void execIncreaseExp(struct ExecEnviron* e, struct AstElement* a)
 //decreases number variable's value by 1
 static void execDecreaseExp(struct ExecEnviron* e, struct AstElement* a)
 {
-	printf(" decrease_op");
 	char* name = a->data.expByName.name;
 	for (variable v : e->variables)
 	{
@@ -235,11 +217,9 @@ static void execDecreaseExp(struct ExecEnviron* e, struct AstElement* a)
 //Executes binary operations and returns a number
 static variable execBinaryExp(struct ExecEnviron* e, struct AstElement* a)
 {
-	printf(" binary exp ");
 	variable left = valueExecs(e, a->data.expression.left);
 	variable right = valueExecs(e, a->data.expression.right);
 	if ((left.type == 1  || left.type == 3) && (right.type == 1 || left.type == 3)) {
-		printf("| %f -=|%c|=- %f |", left.numVal, a->data.expression.op, right.numVal);
 		if (a->data.expression.op == '+') {
 			variable ans;
 			ans.type = 1; //ans is a number
@@ -277,7 +257,6 @@ static variable execBinaryExp(struct ExecEnviron* e, struct AstElement* a)
 //Executes Boolean expressions
 static variable execBooleanExp(struct ExecEnviron* e, struct AstElement* a)
 {
-	printf(" boolean exp");
 	char* leftName = a->data.booleanOperation.left;
 	variable left;
 	variable right = valueExecs(e, a->data.booleanOperation.right);
@@ -329,7 +308,6 @@ static variable execBooleanExp(struct ExecEnviron* e, struct AstElement* a)
 //Executes Equals expression
 static variable execEqualsExp(struct ExecEnviron* e, struct AstElement* a)
 {
-	printf(" equals exp");
 	char* leftName = a->data.booleanOperation.left;
 	variable left;
 	variable right = valueExecs(e, a->data.booleanOperation.right);
@@ -344,7 +322,6 @@ static variable execEqualsExp(struct ExecEnviron* e, struct AstElement* a)
 	if ((left.type == 1 || left.type == 3) && (right.type == 1 || left.type == 3)) {
 		variable ans;
 		ans.type = 5;
-		printf("left: %f right: %f", left.numVal, right.numVal);
 		if (left.numVal == right.numVal)
 		{
 			ans.state = true;
@@ -361,7 +338,6 @@ static variable execEqualsExp(struct ExecEnviron* e, struct AstElement* a)
 //Executes More equals expression
 static variable execMoreEqualsExp(struct ExecEnviron* e, struct AstElement* a)
 {
-	printf(" More equals exp");
 	char* leftName = a->data.booleanOperation.left;
 	variable left;
 	variable right = valueExecs(e, a->data.booleanOperation.right);
@@ -392,7 +368,6 @@ static variable execMoreEqualsExp(struct ExecEnviron* e, struct AstElement* a)
 //Executes More equals expression
 static variable execLessEqualsExp(struct ExecEnviron* e, struct AstElement* a)
 {
-	printf(" Less equals exp");
 	char* leftName = a->data.booleanOperation.left;
 	variable left;
 	variable right = valueExecs(e, a->data.booleanOperation.right);
@@ -423,7 +398,6 @@ static variable execLessEqualsExp(struct ExecEnviron* e, struct AstElement* a)
 //Function argument template
 static variable functionArgument(struct ExecEnviron* e, struct AstElement* a)
 {
-	printf(" argument ");
 	char* data_type = a->data.argument.data_type;
 	char* name = a->data.argument.name;
 	variable var;
@@ -436,7 +410,6 @@ static variable functionArgument(struct ExecEnviron* e, struct AstElement* a)
 //Function call parameter template
 static variable functionCallArgument(struct ExecEnviron* e, struct AstElement* a)
 {
-	printf(" call argument ");
 	char* name = a->data.callArgument.name;
 	variable var;
 	for (int i = 0; i < e->variables.size(); i++)
@@ -452,7 +425,6 @@ static variable functionCallArgument(struct ExecEnviron* e, struct AstElement* a
 //Function call parameter template for string values without identifier
 static variable functionCallArgument2(struct ExecEnviron* e, struct AstElement* a)
 {
-	printf(" call argument2 ");
 	char* strVal = a->data.callArgument2.strVal;
 	variable var;
 	var.type = 2;
@@ -463,7 +435,6 @@ static variable functionCallArgument2(struct ExecEnviron* e, struct AstElement* 
 //Function call parameter template for float values without identifier
 static variable functionCallArgument3(struct ExecEnviron* e, struct AstElement* a)
 {
-	printf(" call argument3 ");
 	float numVal = a->data.callArgument3.numVal;
 	variable var;
 	var.type = 1;
@@ -480,7 +451,6 @@ static void runnableExecs(struct ExecEnviron* e, struct AstElement* a)
 {
 	if (e->state == true)
 	{
-		printf("\n \t -runnable exec-");
 		if (a->operation == 1)
 		{
 			execAssignment(e, a);
@@ -543,7 +513,6 @@ static void runnableExecs(struct ExecEnviron* e, struct AstElement* a)
 //Variable declaration
 static void execDeclaration(struct ExecEnviron* e, struct AstElement* a)
 {
-	printf("\n \t \t declaration ");
 	char* name = a->data.declaration.name;
 	char* data_type = a->data.declaration.data_type;
 	variable var = valueExecs(e, a->data.declaration.right); // right side value/variable
@@ -563,7 +532,6 @@ static void execDeclaration(struct ExecEnviron* e, struct AstElement* a)
 //Value assignment
 static void execAssignment(struct ExecEnviron* e, struct AstElement* a)
 {
-	printf("\n \t \t assignment ");
 	char* name = a->data.assignment.name;
 	struct AstElement* r = a->data.assignment.right;
 	variable var = valueExecs(e, r); //gets right side value/variable
@@ -596,7 +564,6 @@ static void execAssignment(struct ExecEnviron* e, struct AstElement* a)
 //All statement execution
 static void execStatements(struct ExecEnviron* e, struct AstElement* a)
 {
-	printf(" Statements");
 	for (int i = 0; i < a->data.statements.count-1; i++)
 	{
 		runnableExecs(e, a->data.statements.statements[i]);
@@ -606,7 +573,6 @@ static void execStatements(struct ExecEnviron* e, struct AstElement* a)
 //While statement execution
 static void execWhile(struct ExecEnviron* e, struct AstElement* a)
 {
-	printf("\n \t \t While");
 	struct AstElement* const condition = a->data.whileStmt.cond;
 	struct AstElement* const statements = a->data.whileStmt.statements;
 	variable var;
@@ -625,7 +591,6 @@ static void execWhile(struct ExecEnviron* e, struct AstElement* a)
 //If statement execution
 static void execIf(struct ExecEnviron* e, struct AstElement* a)
 {
-	printf("\n \t \t IF");
 	struct AstElement* const condition = a->data.ifStmt.cond;
 	struct AstElement* const statements = a->data.ifStmt.statements;
 	variable var;
@@ -643,7 +608,6 @@ static void execIf(struct ExecEnviron* e, struct AstElement* a)
 //Elif statement execution
 static void execElif(struct ExecEnviron* e, struct AstElement* a)
 {
-	printf("\n \t \t IF Elif");
 	struct AstElement* const firstIfCond = a->data.elifStmt.firstIf->data.ifStmt.cond;
 	struct AstElement* const firstIfStatements = a->data.elifStmt.firstIf->data.ifStmt.statements;
 	struct AstElement* const elifCond = a->data.elifStmt.elseIfCond;
@@ -668,7 +632,6 @@ static void execElif(struct ExecEnviron* e, struct AstElement* a)
 //If Else statement execution
 static void execElseIf(struct ExecEnviron* e, struct AstElement* a)
 {
-	printf("\n \t \t If Else");
 	struct AstElement* const firstIfCond = a->data.elseStmt.firstIf->data.ifStmt.cond;
 	struct AstElement* const firstIfStatements = a->data.elseStmt.firstIf->data.ifStmt.statements;
 	struct AstElement* const elseStatements = a->data.elseStmt.elseStatements;
@@ -691,7 +654,6 @@ static void execElseIf(struct ExecEnviron* e, struct AstElement* a)
 //Function declaration
 static void functionDeclaration(struct ExecEnviron* e, struct AstElement* a)
 {
-	printf("\n \t \t Function_Declaration ");
 	char* data_type = a->data.functionDeclaration.data_type;
 	char* name = a->data.functionDeclaration.name;
 	struct AstElement* parametersListAst = a->data.functionDeclaration.argumentsList;
@@ -714,13 +676,11 @@ static void functionDeclaration(struct ExecEnviron* e, struct AstElement* a)
 //Function call
 static void functionCall(struct ExecEnviron* e, struct AstElement* a)
 {
-	printf("\n \t \t Function call ");
 	char* name = a->data.functionCall.name;
 	struct AstElement* argumentsList = a->data.functionCall.parameters;
 	function func;
 	//Function call parameters
 	vector<variable> parametersList;
-	printf(name);
 	for (int i = 0; i < argumentsList->data.argumentList.count; i++)
 	{
 		variable param = valueExecs(e, argumentsList->data.argumentList.arguments[i]);
@@ -801,13 +761,6 @@ static void functionCall(struct ExecEnviron* e, struct AstElement* a)
 			ExecEnviron* e2 = createEnv(); // Function is executed in a new environment
 			e2->variables = parametersList2; //Assigning parameters to new environment's variables
 			execAst(e2, statements); // Funtion execution
-			for (variable v : e2->variables)
-			{
-				if (v.type == 7)
-				{
-					printf(" =-=-=boopbeep: %s =-=-=-=", v.name);
-				}
-			}
 			freeEnv(e2);
 		}
 	}
@@ -816,7 +769,6 @@ static void functionCall(struct ExecEnviron* e, struct AstElement* a)
 //Function call without parameters
 static void functionCallWithoutParameters(struct ExecEnviron* e, struct AstElement* a)
 {
-	printf("\n \t \t Function call without parameters ");
 	char* name = a->data.functionCallWithoutParameters.name;
 	function func;
 	if (strcmp(name, "print") == 0) // print function
@@ -877,14 +829,12 @@ static void functionReturnStatement(struct ExecEnviron* e, struct AstElement* a)
 
 static void assignFunctionValue(struct ExecEnviron* e, struct AstElement* a)
 {
-	printf("\n \t \t Assign Function ");
 	char* varName = a->data.assignFunctionValue.varName;
 	char* funcName = a->data.assignFunctionValue.funcName;
 	struct AstElement* argumentsList = a->data.assignFunctionValue.parameters;
 	function func;
 	//Function call parameters
 	vector<variable> parametersList;
-	printf("|id: %s, func: %s |", varName, funcName);
 	for (int i = 0; i < argumentsList->data.argumentList.count; i++)
 	{
 		variable param = valueExecs(e, argumentsList->data.argumentList.arguments[i]);
@@ -984,7 +934,6 @@ static void assignFunctionValue(struct ExecEnviron* e, struct AstElement* a)
 //Method that executes given AST
 void execAst(struct ExecEnviron* e, struct AstElement* a)
 {
-	printf("\n----execAst-----");
 	runnableExecs(e, a);
 }
 
@@ -992,18 +941,11 @@ struct ExecEnviron* createEnv()
 {
 	//assert(ekLastElement == (sizeof(valExecs) / sizeof(*valExecs)));
 	//assert(ekLastElement == (sizeof(runExecs) / sizeof(*runExecs)));
-	printf("\n Creating environment");
 	ExecEnviron* execEnviron = new ExecEnviron();
 	return execEnviron;
 }
 
 void freeEnv(struct ExecEnviron* e)
 {
-	printf("\n freeing environment ");
-	//printf("\n ---variable count: %d", e->variables.size());
-	printf("\n \t variables:");
-	for (variable v : e->variables) {
-		printf("\n \t \t name: %s, numVal: %f, type: %d, actualType: %s ---", v.name, v.numVal, v.type, v.actualType);
-	}
 	free(e);
 }
